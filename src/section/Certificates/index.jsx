@@ -3,27 +3,27 @@ import Carousel from "../../components/Carousel";
 
 const slides = [
   {
-    image: "src/assets/Certificates/cert1.png",
+    image: "src/assets/cert1.png",
     alt: "Image 1",
   },
   {
-    image: "src/assets/Certificates/cert2.png",
+    image: "src/assets/cert2.png",
     alt: "Image 2",
   },
   {
-    image: "src/assets/Certificates/cert3.png",
+    image: "src/assets/cert3.png",
     alt: "Image 3",
   },
   {
-    image: "src/assets/Certificates/cert4.png",
+    image: "src/assets/cert4.png",
     alt: "Image 4",
   },
   {
-    image: "src/assets/Certificates/cert5.png",
+    image: "src/assets/cert5.png",
     alt: "Image 5",
   },
   {
-    image: "src/assets/Certificates/cert6.png",
+    image: "src/assets/cert6.png",
     alt: "Image 6",
   },
 ];
