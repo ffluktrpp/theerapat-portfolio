@@ -4,27 +4,27 @@ import Carousel from "../../components/Carousel";
 const slides = [
   {
     image: "src/assets/cert1.png",
-    alt: "Image 1",
+    alt: "Certificates",
   },
   {
     image: "src/assets/cert2.png",
-    alt: "Image 2",
+    alt: "Certificates",
   },
   {
     image: "src/assets/cert3.png",
-    alt: "Image 3",
+    alt: "Certificates",
   },
   {
     image: "src/assets/cert4.png",
-    alt: "Image 4",
+    alt: "Certificates",
   },
   {
     image: "src/assets/cert5.png",
-    alt: "Image 5",
+    alt: "Certificates",
   },
   {
     image: "src/assets/cert6.png",
-    alt: "Image 6",
+    alt: "Certificates",
   },
 ];
 
