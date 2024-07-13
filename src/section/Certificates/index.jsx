@@ -1,29 +1,35 @@
 import { useEffect } from "react";
 import Carousel from "../../components/Carousel";
+import certN1 from "../../assets/cert1.png";
+import certN2 from "../../assets/cert2.png";
+import certN3 from "../../assets/cert3.png";
+import certN4 from "../../assets/cert4.png";
+import certN5 from "../../assets/cert5.png";
+import certN6 from "../../assets/cert6.png";
 
 const slides = [
   {
-    image: "src/assets/cert1.png",
+    image: certN1,
     alt: "Certificates",
   },
   {
-    image: "src/assets/cert2.png",
+    image: certN2,
     alt: "Certificates",
   },
   {
-    image: "src/assets/cert3.png",
+    image: certN3,
     alt: "Certificates",
   },
   {
-    image: "src/assets/cert4.png",
+    image: certN4,
     alt: "Certificates",
   },
   {
-    image: "src/assets/cert5.png",
+    image: certN5,
     alt: "Certificates",
   },
   {
-    image: "src/assets/cert6.png",
+    image: certN6,
     alt: "Certificates",
   },
 ];
