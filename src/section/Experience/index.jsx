@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import expImg1 from "../../assets/weather-app.png";
 import expImg2 from "../../assets/funkfood.png";
 import expImg3 from "../../assets/stroop-test.png";
-import expImg4 from "../../assets/funkfood.png";
 
 const Experience = ({ onInitial }) => {
   const [isMouseEnter, setIsMouseEnter] = useState({});
