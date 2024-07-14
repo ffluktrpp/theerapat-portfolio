@@ -19,17 +19,17 @@ const Experience = ({ onInitial }) => {
     >
       <div className="text-primaryTitle text-lg font-medium">Projects</div>
       <div
-        className={`grid grid-cols-[30%_70%] px-2 py-6 rounded-xl transition-all ${
+        className={`lg:grid lg:grid-cols-[30%_70%] px-2 py-6 rounded-xl transition-all ${
           isMouseEnter["exp1"] ? "bg-blue-900" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp1"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp1"]: false })}
       >
         <div className="text-sm text-gray-300">
-          <div className="text-xl">
+          <div className="text-xl mb-2">
             <span>2023</span>
           </div>
-          <div>
+          <div className="flex justify-center lg:justify-start mb-2">
             <img src={expImg1} alt="#" className="w-5/6 rounded-lg" />
           </div>
         </div>
@@ -71,17 +71,17 @@ const Experience = ({ onInitial }) => {
       </div>
 
       <div
-        className={`grid grid-cols-[30%_70%] px-2 py-6 rounded-xl transition-all ${
+        className={`lg:grid lg:grid-cols-[30%_70%] px-2 py-6 rounded-xl transition-all ${
           isMouseEnter["exp2"] ? "bg-blue-900" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp2"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp2"]: false })}
       >
         <div className="text-sm text-gray-300">
-          <div className="text-xl">
+          <div className="text-xl mb-2">
             <span>2024</span>
           </div>
-          <div>
+          <div className="flex justify-center lg:justify-start mb-2">
             <img src={expImg2} alt="#" className="w-5/6 rounded-lg" />
           </div>
         </div>
@@ -117,17 +117,17 @@ const Experience = ({ onInitial }) => {
       </div>
 
       <div
-        className={`grid grid-cols-[30%_70%] px-2 py-6 rounded-xl transition-all ${
+        className={`lg:grid lg:grid-cols-[30%_70%] px-2 py-6 rounded-xl transition-all ${
           isMouseEnter["exp3"] ? "bg-blue-900" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp3"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp3"]: false })}
       >
         <div className="text-sm text-gray-300">
-          <div className="text-xl">
+          <div className="text-xl mb-2">
             <span>2024</span>
           </div>
-          <div>
+          <div className="flex justify-center lg:justify-start mb-2">
             <img src={expImg3} alt="#" className="w-5/6 rounded-lg" />
           </div>
         </div>
@@ -147,7 +147,7 @@ const Experience = ({ onInitial }) => {
             The Stroop test is a psychological experiment designed to measure
             cognitive control and processing speed. It involves a task where
             participants must name the color of the ink used to print words,
-            which can be incongruent with the word itself
+            which can be incongruent with the word itself.
           </div>
           <div>
             <a href="https://d8fp8g.csb.app/" target="blank">
