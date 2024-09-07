@@ -56,7 +56,7 @@ function App() {
   }, [sectionIds]);
 
   return (
-    <>
+    <div>
       <div className="mt-14 mx-auto max-w-6xl gap-y-5 grid lg:grid-cols-[40%_60%]">
         <LeftSection
           navbarItems={navbarItems}
@@ -64,7 +64,7 @@ function App() {
         />
         <RightSection onInitial={addsectionIds} />
       </div>
-    </>
+    </div>
   );
 }
 
