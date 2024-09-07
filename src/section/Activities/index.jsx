@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import Carousel from "../../components/Carousel";
+import { motion } from "framer-motion";
 
 const slides = [
   {
@@ -26,16 +27,32 @@ function Activities({ onInitial }) {
   useEffect(() => {
     onInitial("Activities-section");
   }, []);
+
   return (
-    <div
-      className="bg-primarySubContent rounded-lg p-2 scroll-m-14"
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="bg-gradient-to-br from-primarySubContent to-primarySubContent/80 rounded-lg p-6 shadow-lg scroll-m-14"
       id="Activities-section"
     >
-      <div className="text-primaryTitle text-lg font-medium">Activities</div>
-      <div>
-        <Carousel slides={slides} interval={3000} autoPlay={true} />
-      </div>
-    </div>
+      <motion.h2
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="text-primaryTitle text-2xl font-bold mb-6"
+      >
+        Activities
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+        className="relative overflow-hidden rounded-lg shadow-md"
+      >
+        <Carousel slides={slides} interval={5000} autoPlay={true} />
+      </motion.div>
+    </motion.div>
   );
 }
 

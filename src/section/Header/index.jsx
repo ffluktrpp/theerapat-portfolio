@@ -11,10 +11,7 @@ const Header = () => {
       </div>
       <div className="text-sm w-4/6 font-thin">{data.caption}</div>
       <div className="mt-4">
-        <a
-          href="https://drive.google.com/file/d/1VKL_Kk5D7dg-VuCWTvufVvB3j-ngkNwJ/view"
-          target=""
-        >
+        <a href="" target="">
           <span className="rounded-lg bg-primaryTitle text-primaryContent py-2 px-4 font-medium">
             <span className="rotate-90 inline-block mr-3">
               <FontAwesomeIcon className="animate-bounce" icon={faArrowUp} />
