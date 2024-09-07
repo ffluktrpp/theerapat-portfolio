@@ -12,7 +12,7 @@ const Header = () => {
       <div className="text-sm w-4/6 font-thin">{data.caption}</div>
       <div className="mt-4">
         <a
-          href=""
+          href="https://drive.google.com/file/d/1VKL_Kk5D7dg-VuCWTvufVvB3j-ngkNwJ/view"
           target=""
         >
           <span className="rounded-lg bg-primaryTitle text-primaryContent py-2 px-4 font-medium">
