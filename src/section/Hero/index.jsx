@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import heroImage from "../../assets/hero.png";
 
 const HeroSection = () => {
   const [showInfo, setShowInfo] = useState(false);
@@ -30,14 +31,13 @@ const HeroSection = () => {
         </div>
         <div className="flex-shrink-0">
           <img
-            src="src\assets\hero.png"
+            src={heroImage}
             alt="Hero"
             className="w-60 md:w-80 h-auto rounded-lg"
           />
         </div>
       </motion.div>
 
-      {/* ลูกศรเพื่อเปิด/ปิดการแสดงผลข้อมูล Personal Info */}
       <div className="text-center">
         <FontAwesomeIcon
           icon={showInfo ? faChevronUp : faChevronDown}
@@ -46,7 +46,6 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* แสดงข้อมูล Personal Info เมื่อกดลูกศร */}
       {showInfo && (
         <motion.div
           initial={{ opacity: 0 }}
