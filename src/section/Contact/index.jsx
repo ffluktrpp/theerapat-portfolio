@@ -34,7 +34,7 @@ const Contact = () => {
           </div>
         </a>
         <a
-          href="https://www.linkedin.com/in/your-linkedin-profile/"
+          href="https://www.linkedin.com/in/theerapat-srichompoo-664483327/"
           target="_blank"
           rel="noopener noreferrer"
         >
