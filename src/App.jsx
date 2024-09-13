@@ -64,6 +64,34 @@ function App() {
         />
         <RightSection onInitial={addsectionIds} />
       </div>
+
+      <div className="hidden md:block">
+        {/*<img
+          src="src\assets\floatItem\blood.png"
+          alt="Blood"
+          className="absolute -top-[18%] right-16 w-52 -z-10"
+        />
+        <img
+          src="src\assets\floatItem\blood.png"
+          alt="Blood"
+          className="absolute -top-[18%] left-12 w-52 -z-10"
+        />*/}
+        <img
+          src="src\assets\floatItem\guitar.png"
+          alt="Guitar"
+          className="guitar w-[350px]"
+        />
+        <img
+          src="src\assets\floatItem\basketball-ball.png"
+          alt="Basketball"
+          className="basketball w-40"
+        />
+        <img
+          src="src\assets\floatItem\laptop-screen.png"
+          alt="Laptop"
+          className="laptop w-56"
+        />
+      </div>
     </div>
   );
 }

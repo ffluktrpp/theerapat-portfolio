@@ -58,7 +58,7 @@ const Experience = ({ onInitial }) => {
             This project is for a community of movie lovers to review their
             favorite movies and read other's reviews. It was built using React,
             TailwindCSS, JavaScript, and Firebase. I worked on the website's
-            interface and some backend features.
+            interface and some backend features. (unfinished)
           </div>
           <div>
             <a href="#" target="blank">

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import heroImage from "../../assets/hero.png";
+import flareImage from "../../assets/floatItem/flare.png"; // import รูป flare
 
 const HeroSection = () => {
   const [showInfo, setShowInfo] = useState(false);
@@ -10,13 +11,14 @@ const HeroSection = () => {
   const handleToggleInfo = () => {
     setShowInfo((prevShowInfo) => !prevShowInfo);
   };
+
   return (
     <div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex items-center justify-between md:p-6 text-white"
+        className="flex items-center justify-between md:p-6 text-white relative -z-10"
       >
         <div className="flex-1">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-primaryTitle text-end md:mr-4">
@@ -29,11 +31,16 @@ const HeroSection = () => {
             Theerapat Srichompoo
           </h1>
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 relative">
+          <img
+            src={flareImage}
+            alt="Flare"
+            className="absolute top-0 left-0 w-80 md:w-[400px] h-auto opacity-80"
+          />
           <img
             src={heroImage}
             alt="Hero"
-            className="w-60 md:w-80 h-auto rounded-lg"
+            className="relative w-60 md:w-80 h-auto rounded-lg"
           />
         </div>
       </motion.div>
@@ -55,10 +62,6 @@ const HeroSection = () => {
         >
           <div className="text-2xl font-bold text-primaryTitle mb-6">
             Personal Info
-          </div>
-          <div>
-            <span className="font-semibold text-primaryTitle">Name:</span>{" "}
-            Theerapat Srichompoo
           </div>
           <div>
             <span className="font-semibold text-primaryTitle">Nickname:</span>{" "}
