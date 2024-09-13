@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import heroImage from "../../assets/hero.png";
-import flareImage from "../../assets/floatItem/flare.png"; // import รูป flare
+import flareImage from "../../assets/floatItem/flare.png";
 
 const HeroSection = () => {
   const [showInfo, setShowInfo] = useState(false);

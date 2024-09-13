@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import LeftSection from "./section/Left-Section";
 import RightSection from "./section/Right-Section";
+import basketball from "../../assets/floatItem/basketball-ball.png";
+import guitar from "../../assets/floatItem/guitar.png";
+import laptop from "../../assets/floatItem/laptop-screen.png";
 
 function App() {
   const [sectionIds, setSectionIds] = useState([]);
@@ -76,21 +79,9 @@ function App() {
           alt="Blood"
           className="absolute -top-[18%] left-12 w-52 -z-10"
         />*/}
-        <img
-          src="src\assets\floatItem\guitar.png"
-          alt="Guitar"
-          className="guitar w-[350px]"
-        />
-        <img
-          src="src\assets\floatItem\basketball-ball.png"
-          alt="Basketball"
-          className="basketball w-40"
-        />
-        <img
-          src="src\assets\floatItem\laptop-screen.png"
-          alt="Laptop"
-          className="laptop w-56"
-        />
+        <img src={guitar} alt="Guitar" className="guitar w-[350px]" />
+        <img src={basketball} alt="Basketball" className="basketball w-40" />
+        <img src={laptop} alt="Laptop" className="laptop w-56" />
       </div>
     </div>
   );
