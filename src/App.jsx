@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import LeftSection from "./section/Left-Section";
 import RightSection from "./section/Right-Section";
-import basketball from "../../assets/floatItem/basketball-ball.png";
-import guitar from "../../assets/floatItem/guitar.png";
-import laptop from "../../assets/floatItem/laptop-screen.png";
+import basketball from "./assets/floatItem/basketball-ball.png";
+import guitar from "./assets/floatItem/guitar.png";
+import laptop from "./assets/floatItem/laptop-screen.png";
 
 function App() {
   const [sectionIds, setSectionIds] = useState([]);
