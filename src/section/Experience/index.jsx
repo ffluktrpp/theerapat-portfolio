@@ -5,6 +5,7 @@ import expImg1 from "../../assets/weather-app.png";
 import expImg2 from "../../assets/water-system.png";
 import expImg3 from "../../assets/stroop-test.png";
 import expImg4 from "../../assets/movies-review.png";
+import expImg5 from "../../assets/oph-website.png";
 import {
   faArrowUpRightFromSquare,
   faCode,
@@ -24,6 +25,72 @@ const Experience = ({ onInitial }) => {
     >
       <div className="text-primaryTitle text-2xl font-bold mb-6 ml-5">
         Projects
+      </div>
+
+      {/* BU Open House Website */}
+      <div
+        className={`lg:grid lg:grid-cols-[30%_70%] px-4 py-6 mt-4 rounded-xl transition-transform transform hover:scale-105 ${
+          isMouseEnter["exp5"] ? "bg-slate-600 shadow-lg" : ""
+        }`}
+        onMouseEnter={() => setIsMouseEnter({ ["exp5"]: true })}
+        onMouseLeave={() => setIsMouseEnter({ ["exp5"]: false })}
+      >
+        <div className="text-sm text-gray-300">
+          <div className="text-xl mb-2">
+            <span>2024</span>
+          </div>
+          <div className="flex justify-center lg:justify-start mb-2">
+            <img
+              src={expImg5}
+              alt="BU oph Website"
+              className="w-5/6 rounded-lg shadow-md transition-transform duration-300"
+            />
+          </div>
+        </div>
+        <div className="grid gap-y-4">
+          <div
+            className={`text-xl font-bold transition-all ${
+              isMouseEnter["exp5"] ? "text-primaryTitle" : ""
+            }`}
+          >
+            BU Open House Website
+          </div>
+          <div className="text-sm">
+            This group mini projects for CS319. This is the Open House website
+            for the IT faculty at Bangkok University, developed using HTML and
+            CSS. I have worked on the home page, about page, workshop and
+            activities page, sponsors and partners page, along with the
+            navigation bar and footer.
+          </div>
+          <div>
+            <a
+              href="https://ffluktrpp.github.io/bu-oph-website/"
+              target="blank"
+            >
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className="text-xl hover:text-gray-400 transition-all mr-3"
+              />
+            </a>
+            <a
+              href="https://github.com/ffluktrpp/bu-oph-website"
+              target="blank"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-2xl hover:text-gray-400 transition-all"
+              />
+            </a>
+          </div>
+          <div className="flex gap-x-4">
+            <div className="bg-primaryTitle text-primaryContent rounded-md px-2 py-1 hover:scale-110 transition-all">
+              HTML
+            </div>
+            <div className="bg-primaryTitle text-primaryContent rounded-md px-2 py-1 hover:scale-110 transition-all">
+              CSS
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Movies Review Website */}
@@ -61,7 +128,10 @@ const Experience = ({ onInitial }) => {
             interface and some backend features. (unfinished)
           </div>
           <div>
-            <a href="#" target="blank">
+            <a
+              href="https://github.com/ffluktrpp/movies-review-project"
+              target="blank"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 className="text-2xl hover:text-gray-400 transition-all"

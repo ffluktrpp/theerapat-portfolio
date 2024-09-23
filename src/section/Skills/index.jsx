@@ -10,9 +10,11 @@ import {
   faJava,
   faPython,
   faGithub,
+  faFigma,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion } from "framer-motion"; // Add framer-motion for animations
+import { motion } from "framer-motion";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons/faDatabase";
 
 function Skills({ onInitial }) {
   useEffect(() => {
@@ -35,35 +37,41 @@ function Skills({ onInitial }) {
       >
         Skills
       </motion.div>
-      <div className="space-y-4 mx-10 py-4">
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-10 py-4">
         {[
-          { icon: faHtml5, percentage: 70 },
-          { icon: faCss3, percentage: 80 },
-          { icon: faReact, percentage: 75 },
-          { icon: faSquareJs, percentage: 50 },
-          { icon: faNodeJs, percentage: 50 },
-          { icon: faJava, percentage: 40 },
-          { icon: faPython, percentage: 70 },
-          { icon: faGithub, percentage: 60 },
-        ].map(({ icon, percentage }, index) => (
+          { icon: faHtml5, name: "HTML5" },
+          { icon: faCss3, name: "CSS3" },
+          { icon: faReact, name: "React" },
+          { icon: faSquareJs, name: "JavaScript" },
+          { icon: faNodeJs, name: "Node.js" },
+          { icon: faJava, name: "Java" },
+          { icon: faPython, name: "Python" },
+          { icon: faFigma, name: "Figma" },
+          { icon: faGithub, name: "GitHub" },
+          { icon: faDatabase, name: "SQL" }, // Added SQL
+        ].map(({ icon, name }, index) => (
           <motion.div
             key={index}
-            className="flex items-center gap-5"
+            className="flex flex-col items-center gap-2 relative"
             whileHover={{ scale: 1.1 }}
           >
             <FontAwesomeIcon
-              className="text-6xl py-3 hover:text-primaryHover transition-all duration-300"
+              className="text-6xl py-3 transition-all duration-300"
               icon={icon}
             />
-            <ProgressBar
-              percentage={percentage}
-              color="primaryTitle"
-              animated
-            />
+            <motion.div
+              className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-xl font-bold rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+              initial={{ opacity: 0 }}
+              whileHover={{ opacity: 1 }}
+            >
+              {name}
+            </motion.div>
           </motion.div>
         ))}
+
         <motion.div
-          className="flex items-center gap-5"
+          className="flex flex-col items-center gap-2 relative"
           whileHover={{ scale: 1.1 }}
         >
           <img
@@ -71,7 +79,31 @@ function Skills({ onInitial }) {
             alt="MongoDB"
             className="w-16 py-3 opacity-80 hover:opacity-100 transition-opacity duration-300"
           />
-          <ProgressBar percentage={50} color="primaryTitle" animated />
+          <motion.div
+            className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-xl font-bold rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+            initial={{ opacity: 0 }}
+            whileHover={{ opacity: 1 }}
+          >
+            MongoDB
+          </motion.div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-2 relative"
+          whileHover={{ scale: 1.1 }}
+        >
+          <img
+            src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png"
+            alt="Firebase"
+            className="w-16 py-3 opacity-80 hover:opacity-100 transition-opacity duration-300"
+          />
+          <motion.div
+            className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-xl font-bold rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+            initial={{ opacity: 0 }}
+            whileHover={{ opacity: 1 }}
+          >
+            Firebase
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>

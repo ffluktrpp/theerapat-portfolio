@@ -21,7 +21,7 @@ const HeroSection = () => {
         className="flex items-center justify-between md:p-6 text-white relative -z-10"
       >
         <div className="flex-1">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 text-primaryTitle text-end md:mr-4">
+          <h1 className=" text-5xl md:text-7xl font-bold mb-4 text-primaryTitle text-end md:mr-4">
             Hello
           </h1>
           <h1 className="text-xl md:text-2xl font-bold  text-primaryTitle text-end md:mr-4">
@@ -31,6 +31,7 @@ const HeroSection = () => {
             Theerapat Srichompoo
           </h1>
         </div>
+
         <div className="flex-shrink-0 relative">
           <img
             src={flareImage}
@@ -49,7 +50,7 @@ const HeroSection = () => {
         <FontAwesomeIcon
           icon={showInfo ? faChevronUp : faChevronDown}
           onClick={handleToggleInfo}
-          className="text-primaryHover text-2xl cursor-pointer hover:text-white transition-colors duration-300"
+          className="text-primaryHover text-2xl cursor-pointer hover:text-white animate-bounce transition-colors duration-300"
         />
       </div>
 
