@@ -20,7 +20,7 @@ const Experience = ({ onInitial }) => {
 
   return (
     <div
-      className="bg-slate-700 rounded-lg p-4 scroll-m-14"
+      className="mt-8 bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800 shadow-xl w-full max-w-3xl"
       id="Projects-section"
     >
       <div className="text-primaryTitle text-2xl font-bold mb-6 ml-5">
@@ -30,7 +30,7 @@ const Experience = ({ onInitial }) => {
       {/* BU Open House Website */}
       <div
         className={`lg:grid lg:grid-cols-[30%_70%] px-4 py-6 mt-4 rounded-xl transition-transform transform hover:scale-105 ${
-          isMouseEnter["exp5"] ? "bg-slate-600 shadow-lg" : ""
+          isMouseEnter["exp5"] ? "bg-gray-800 shadow-lg" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp5"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp5"]: false })}
@@ -96,7 +96,7 @@ const Experience = ({ onInitial }) => {
       {/* Movies Review Website */}
       <div
         className={`lg:grid lg:grid-cols-[30%_70%] px-4 py-6 mt-4 rounded-xl transition-transform transform hover:scale-105 ${
-          isMouseEnter["exp4"] ? "bg-slate-600 shadow-lg" : ""
+          isMouseEnter["exp4"] ? "bg-gray-800 shadow-lg" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp4"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp4"]: false })}
@@ -124,10 +124,19 @@ const Experience = ({ onInitial }) => {
           <div className="text-sm">
             This project is for a community of movie lovers to review their
             favorite movies and read other's reviews. It was built using React,
-            TailwindCSS, JavaScript, and Firebase. I worked on the website's
-            interface and some backend features. (unfinished)
+            TailwindCSS, JavaScript, Firebase and TMDB's API. I worked on the
+            website's interface and some backend features.
           </div>
           <div>
+            <a
+              href="https://movies-review-development.firebaseapp.com/"
+              target="blank"
+            >
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className="text-xl hover:text-gray-400 transition-all mr-3"
+              />
+            </a>
             <a
               href="https://github.com/ffluktrpp/movies-review-project"
               target="blank"
@@ -158,7 +167,7 @@ const Experience = ({ onInitial }) => {
       {/* Stroop Test */}
       <div
         className={`lg:grid lg:grid-cols-[30%_70%] px-4 py-6 mt-4 rounded-xl transition-transform transform hover:scale-105 ${
-          isMouseEnter["exp3"] ? "bg-slate-600 shadow-lg" : ""
+          isMouseEnter["exp3"] ? "bg-gray-800 shadow-lg" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp3"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp3"]: false })}
@@ -222,7 +231,7 @@ const Experience = ({ onInitial }) => {
       {/* Happy Water Management System */}
       <div
         className={`lg:grid lg:grid-cols-[30%_70%] px-4 py-6 rounded-xl transition-transform transform hover:scale-105 ${
-          isMouseEnter["exp2"] ? "bg-slate-600 shadow-lg" : ""
+          isMouseEnter["exp2"] ? "bg-gray-800 shadow-lg" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp2"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp2"]: false })}
@@ -281,7 +290,7 @@ const Experience = ({ onInitial }) => {
       {/* Weather Web App */}
       <div
         className={`lg:grid lg:grid-cols-[30%_70%] px-4 py-6 rounded-xl transition-transform transform hover:scale-105 ${
-          isMouseEnter["exp1"] ? "bg-slate-600 shadow-lg" : ""
+          isMouseEnter["exp1"] ? "bg-gray-800 shadow-lg" : ""
         }`}
         onMouseEnter={() => setIsMouseEnter({ ["exp1"]: true })}
         onMouseLeave={() => setIsMouseEnter({ ["exp1"]: false })}

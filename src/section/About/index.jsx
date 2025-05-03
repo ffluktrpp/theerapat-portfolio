@@ -12,7 +12,7 @@ const About = ({ onInitial }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="space-y-6 bg-slate-700 rounded-lg p-6 shadow-lg scroll-m-14"
+      className="mt-8 bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800 shadow-xl w-full max-w-3xl"
       id="About-section"
     >
       <motion.h2

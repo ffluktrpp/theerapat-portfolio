@@ -1,4 +1,4 @@
 export const data = {
     title: "About",
-    description: "I am majoring in Computer Science at Bangkok University Thailand. I have a positive attitude and always listen to the opinions of others and team members. I am attentive to every detail and able to handle my work on time. I would like to use my web application development skills in a real-world working environment. I would also like to further improve and enhance these skills."
+    description: "I am a recent computer science graduate with internship experience and a strong interest in software and web development. Passionate about creating practical solutions, open to learning new technologies, and able to adapt quickly in collaborative environments. Committed to continuous improvement and delivering quality results."
 }

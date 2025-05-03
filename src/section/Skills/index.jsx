@@ -23,7 +23,7 @@ function Skills({ onInitial }) {
 
   return (
     <motion.div
-      className="bg-slate-700 rounded-lg p-2 scroll-m-14"
+      className="mt-8 bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800 shadow-xl w-full max-w-3xl"
       id="Skills-section"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -42,14 +42,15 @@ function Skills({ onInitial }) {
         {[
           { icon: faHtml5, name: "HTML5" },
           { icon: faCss3, name: "CSS3" },
-          { icon: faReact, name: "React" },
           { icon: faSquareJs, name: "JavaScript" },
+          { icon: faReact, name: "React" },
+          { icon: faVuejs, name: "Vue" },
           { icon: faNodeJs, name: "Node.js" },
           { icon: faJava, name: "Java" },
           { icon: faPython, name: "Python" },
           { icon: faFigma, name: "Figma" },
           { icon: faGithub, name: "GitHub" },
-          { icon: faDatabase, name: "SQL" }, // Added SQL
+          { icon: faDatabase, name: "SQL" },
         ].map(({ icon, name }, index) => (
           <motion.div
             key={index}
@@ -69,24 +70,6 @@ function Skills({ onInitial }) {
             </motion.div>
           </motion.div>
         ))}
-
-        <motion.div
-          className="flex flex-col items-center gap-2 relative"
-          whileHover={{ scale: 1.1 }}
-        >
-          <img
-            src="https://static-00.iconduck.com/assets.00/mongodb-icon-512x512-mhzq0108.png"
-            alt="MongoDB"
-            className="w-16 py-3 opacity-80 hover:opacity-100 transition-opacity duration-300"
-          />
-          <motion.div
-            className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white text-xl font-bold rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
-            initial={{ opacity: 0 }}
-            whileHover={{ opacity: 1 }}
-          >
-            MongoDB
-          </motion.div>
-        </motion.div>
 
         <motion.div
           className="flex flex-col items-center gap-2 relative"
